@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Arms, { CounterState, Jelly } from './components/stateAndProps.js';
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
         >
           Learn React
         </a>
+        <Arms title="BlahBlah" />
+        <CounterState />
+        <Jelly title="Lil Wayne" />
       </header>
     </div>
   );
