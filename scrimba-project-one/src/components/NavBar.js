@@ -1,7 +1,7 @@
 
 // import ReactLogo from '../react-logo.png';
-import Logo from '../logo.svg';
-import '../NavBar.css';
+import Logo from '../assets/logo.svg';
+import '../styles/NavBar.css';
 
 function NavBar() {
   return (
