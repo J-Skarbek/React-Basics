@@ -1,0 +1,18 @@
+.section-break-text {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-bottom: 50px;
+  padding: 0 5%;
+}
+
+.section-break-text h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.section-break-text p {
+  font-size: 1.2rem;
+  padding-right: 80%
+}

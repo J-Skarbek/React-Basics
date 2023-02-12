@@ -1,0 +1,12 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  place-items: center;
+  margin: 50px 0;
+}
+
+.hero-img {
+  width: 65%;
+}
