@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 5px 10px 10px -10px rgba(0, 0, 0, 0.10);
 }
 
 .nav-bar h1 {
@@ -9,13 +10,23 @@
   font-weight: bold;
 }
 
+.nav-bar .header-img {
+  width: 100px;
+}
+
 .nav-menu {
   display: flex;
   flex-direction: row;
   list-style-type: none;
+  min-width: 0;
+}
+
+ul.nav-menu {
+  padding: 0 !important;
+  min-width: 300px;
 }
 
 .nav-menu li {
-  margin: 0 5%;
+  margin-right: 5%;
 }
 

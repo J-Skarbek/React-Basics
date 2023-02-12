@@ -6,7 +6,7 @@ import '../NavBar.css';
 function NavBar() {
   return (
     <div className="nav-bar">
-      <img src={Logo} width = "100px" alt=""/>
+      <img src={Logo} width = "100px" alt="" className="header-img"/>
       <ul className="nav-menu">
         <li>About</li>
         <li>Contact</li>
