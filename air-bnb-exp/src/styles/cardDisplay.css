@@ -1,6 +1,6 @@
 .cards-display {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding: 5% 0;
   margin: 3% 0;
 }

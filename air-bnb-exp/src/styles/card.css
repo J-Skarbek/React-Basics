@@ -1,3 +1,7 @@
+.gray-text {
+  color: #918E9B;
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -29,5 +33,14 @@
 .title,
 .title {
   display: flex;
+}
+
+.details p,
+.details img {
+  margin-right: 5px;
+}
+
+.details .dot {
+  width: 5px;
 }
 
