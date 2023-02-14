@@ -1,4 +1,4 @@
-import cardImg from '../assets/kzaferes.jpg';
+import cardImg from '../assets/katie-zaferes.jpg';
 import star from '../assets/Star.svg';
 import dot from '../assets/dot.svg';
 import '../styles/card.css';
