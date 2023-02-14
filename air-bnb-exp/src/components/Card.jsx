@@ -6,7 +6,9 @@ import '../styles/card.css';
 function Card() {
   return (
     <div className="card">
+      <div className="status">
       <p>SOLD OUT</p>
+      </div>
       <div className="featured-img">
         <img src={cardImg} alt="" />
       </div>
