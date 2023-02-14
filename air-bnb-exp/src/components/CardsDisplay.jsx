@@ -15,7 +15,7 @@ function CardsDisplay() {
       />
        <Card 
         title="Learn Wedding Photography"
-        img="../assets/katie-zaferes.jpg"
+        img="../assets/learn-wedding-photography.jpg"
         status="ONLINE"
         rating="5.0"
         numberOfReviews="30"
@@ -24,7 +24,7 @@ function CardsDisplay() {
        />
        <Card 
         title="Group Mountain Biking"
-        img="../assets/katie-zaferes.jpg"
+        img="../assets/group-mtn-biking.jpg"
         status="Online"
         rating="4.8"
         numberOfReviews="2"

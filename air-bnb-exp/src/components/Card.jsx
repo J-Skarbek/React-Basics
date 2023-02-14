@@ -7,23 +7,23 @@ function Card(props) {
   return (
     <div className="card">
       <div className="status">
-      <p>SOLD OUT</p>
+      <p>{props.status}</p>
       </div>
       <div className="featured-img">
         <img src={cardImg} alt="" />
       </div>
       <div className="details">
         <img src={star} alt="" className="star"/>
-        <p>5.0</p>
-        <p className="gray-text">(6)</p>
+        <p>{props.rating}</p>
+        <p className="gray-text">{props.numberOfReviews}</p>
         <img src={dot} alt="" className="dot" />
-        <p className="gray-text">USA</p>      
+        <p className="gray-text">{props.country}</p>      
       </div>
       <div className="title">
-        <p>Life Lessons with Katie Zaferes</p>
+        <p>{props.title}</p>
       </div>
       <div>
-        <p><b>From $136 /</b> person</p>
+        <p><b>From ${props.pricePerPerson} /</b> person</p>
       </div>
     </div>
   )

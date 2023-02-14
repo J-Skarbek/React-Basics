@@ -18,6 +18,7 @@
   z-index: 2;
   background-color: #fafafa;
   border-radius: 10px;
+  text-transform: uppercase;
 }
 
 .status p {
