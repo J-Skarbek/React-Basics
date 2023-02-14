@@ -10,7 +10,7 @@ function Card(props) {
       <p>{props.status}</p>
       </div>
       <div className="featured-img">
-        <img src={cardImg} alt="" />
+        <img src={props.img} alt="" />
       </div>
       <div className="details">
         <img src={star} alt="" className="star"/>
