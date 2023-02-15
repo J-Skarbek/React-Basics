@@ -12,13 +12,14 @@ function CardsDisplay() {
       rating={element.stats.rating}
       numberOfReviews={element.stats.reviewCount}
       location={element.location}
+      country={element.country}
       price={element.price}
     />
   });
   return (
-    <div className="cards-display">
+    <section className="cards-display">
       {cardElements}
-    </div>
+    </section>
   );
 }
 
