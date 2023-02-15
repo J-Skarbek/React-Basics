@@ -1,36 +1,23 @@
 import Card from './Card';
+import data from '../data';
 import '../styles/cardDisplay.css';
 
 function CardsDisplay() {
+  const cardElements = data.map(element => {
+    return <Card
+      key={element.id}
+      title={element.title} 
+      status={element.status}
+      img={element.coverImg}
+      rating={element.stats.rating}
+      numberOfReviews={element.stats.reviewCount}
+      location={element.location}
+      price={element.price}
+    />
+  });
   return (
     <div className="cards-display">
-       <Card
-        title="Life lessons with Katie Zaferes"
-        img="katie-zaferes.jpg"
-        status="SOLD OUT"
-        rating="5.0"
-        numberOfReviews={6}
-        country="USA"
-        pricePerPerson="136"
-      />
-       <Card 
-        title="Learn Wedding Photography"
-        img="learn-wedding-photography.jpg"
-        status="ONLINE"
-        rating="5.0"
-        numberOfReviews={30}
-        country="USA"
-        pricePerPerson="125"
-       />
-       <Card 
-        title="Group Mountain Biking"
-        img="group-mtn-biking.jpg"
-        status="Online"
-        rating="4.8"
-        numberOfReviews={2}
-        country="USA"
-        pricePerPerson="50"
-       />
+      {cardElements}
     </div>
   );
 }

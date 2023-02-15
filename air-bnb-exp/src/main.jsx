@@ -6,8 +6,8 @@ import Hero from './components/Hero';
 import SectionBreak from './components/SectionBreak';
 import CardsDisplay from './components/CardsDisplay';
 import './index.css'
-
 ReactDOM.createRoot(document.getElementById('root')).render(
+
   <React.StrictMode>
     <NavBar />
     <Hero />
