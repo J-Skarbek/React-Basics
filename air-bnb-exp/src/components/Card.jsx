@@ -3,11 +3,17 @@ import dot from '../assets/dot.svg';
 import '../styles/card.css';
 
 function Card(props) {
+  let badgeText;
+  if (props.openSpots === 0) {
+    badgeText = 'Sold Out';
+  } else if (props.location === 'Online') {
+    badgeText = 'ONLINE';
+  };
   return (
     <div className="card">
-      <div className="status">
-      <p>{props.status}</p>
-      </div>
+      {badgeText && 
+      <div className="status"><p>{badgeText}</p></div>
+      }
       <div className="featured-img">
         <img src={`src/assets/${props.img}`} alt="" />
       </div>

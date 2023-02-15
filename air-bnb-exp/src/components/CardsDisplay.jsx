@@ -14,6 +14,7 @@ function CardsDisplay() {
       location={element.location}
       country={element.country}
       price={element.price}
+      openSpots={element.openSpots}
     />
   });
   return (
