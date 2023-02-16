@@ -4,15 +4,15 @@ import '../styles/location.css';
 function Location(props) {
   return (
     <div className="location flex">
-      <div className="featured-img-container">
-        <img src={`src/assets/${props.image}`} className="picture" />
+      <div className="featured-img-container mr-8">
+        <img src={`src/assets/${props.image}`} className="picture object-fill" />
       </div>
-      <div className="location-text-elements">
-        <div className="location-details">
+      <div className="location-text-elements pr-12">
+        <div className="location-details flex">
           <img src={mapMarker} className="map-marker" />
-          <span className="country">{props.country}</span>
+          <span className="country font-semibold tracking-wider text-2xl uppercase">{props.location}</span>
           <span className="google-link">
-            <a href={props.googleMapsUrl}>View on Google Maps</a>
+            <a href={props.googleMapsUrl} className="underline">View on Google Maps</a>
           </span>
         </div>
         <h2 className="name">{props.title}</h2>

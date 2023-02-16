@@ -2,3 +2,20 @@
   border-bottom: 1px red solid;
   margin-bottom: 3%;
 }
+
+div.location-details > * {
+  min-width: 15px;
+  margin-right: 15px;
+}
+
+.featured-img-container {
+  width: 50%;
+  aspect-ratio: 1 / 1;
+  /* margin-right: 25px; */
+}
+
+.featured-img-container img {
+  height: 100%;
+  /* object-fit: cover; */
+  border-radius: 10px;
+}
