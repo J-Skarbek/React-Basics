@@ -3,9 +3,9 @@ import '../styles/header.css';
 
 function Header() {
   return (
-    <header className="header flex bg-red">
+    <header className="header flex bg-red p-4 drop-shadow-md">
       <img src={globe} />
-      <h1>my travel journal.</h1>
+      <h1 className="drop-shadow-lg">my travel journal.</h1>
     </header>
   )
 }

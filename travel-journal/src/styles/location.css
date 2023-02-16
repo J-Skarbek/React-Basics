@@ -1,6 +1,5 @@
 .location {
-  border-bottom: 1px red solid;
-  margin-bottom: 3%;
+  border-color: #77777740;
 }
 
 div.location-details > * {
@@ -11,11 +10,12 @@ div.location-details > * {
 .featured-img-container {
   width: 50%;
   aspect-ratio: 1 / 1;
-  /* margin-right: 25px; */
 }
 
 .featured-img-container img {
   height: 100%;
-  /* object-fit: cover; */
+  width: 400px;
+  max-width: 400px;
   border-radius: 10px;
+
 }

@@ -3,7 +3,7 @@ import '../styles/location.css';
 
 function Location(props) {
   return (
-    <div className="location flex">
+    <div className="location flex pb-8 mb-8 border-b">
       <div className="featured-img-container mr-8">
         <img src={`src/assets/${props.image}`} className="picture object-fill" />
       </div>
@@ -15,9 +15,9 @@ function Location(props) {
             <a href={props.googleMapsUrl} className="underline">View on Google Maps</a>
           </span>
         </div>
-        <h2 className="name">{props.title}</h2>
-        <span className="dates">{props.startDate} {props.endDate}</span>
-        <p className="body-text">{props.description}</p>
+        <h2 className="name font-bold tracking-wide text-4xl mb-4">{props.title}</h2>
+        <span className="dates font-semibold text-xl uppercase">{props.startDate} - {props.endDate}</span>
+        <p className="body-text my-12">{props.description}</p>
       </div>
     </div>
   );
