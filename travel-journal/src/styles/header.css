@@ -1,0 +1,13 @@
+h1 {
+  color: #fff;
+}
+
+.header {
+  align-items: center;
+  justify-content: center;
+}
+
+.header img {
+  margin-right: 10px;
+  width: 20px;
+}
