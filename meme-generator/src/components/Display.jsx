@@ -21,7 +21,7 @@ function Display() {
         </div>
       </div>
       <div className="display flex flex-col justify-center items-center relative h-5/6 min-h-[500px]">
-      <img src={memeImg} alt="" className="w-9/12 h-5/6 max-h-full object-cover"/>
+      <img src={memeImg} alt="" className="w-9/12 h-memeHeight max-h-memeMaxHeight object-contain"/>
         <span className="meme-text font-karla font-black text-white text-6xl uppercase dummy-top-line absolute top-8">Shut Up</span>
         <span className="meme-text font-karla font-black text-white text-6xl uppercase dummy-bottom-line absolute bottom-8">And Take My Money</span>
       </div>
