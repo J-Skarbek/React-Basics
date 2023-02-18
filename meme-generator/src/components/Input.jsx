@@ -1,15 +1,7 @@
 import '../styles/Input.css';
-import memesData from '../memesData';
+import { getMemeImg } from './Meme';
 
-function Input() {
-  const memesArray = memesData.data.memes;
-  let url;
-  function getMemeImg() {
-    const randomNumber = Math.floor(Math.random() * memesArray.length);
-    console.log(randomNumber);
-    url = memesArray[randomNumber].url;
-    console.log(url);
-  }
+function Input() {  
   return (
     <div className="user-input flex items-center justify-center px-8 my-8">
       <form className="flex items-center justify-center flex-wrap gap-x-4 max-w-3xl">
@@ -21,4 +13,4 @@ function Input() {
   );
 }
 
-export default Input;
+export { Input, getMemeImg };

@@ -1,10 +1,20 @@
-import dummyImg from '../assets/dummyImg.jpg';
+// import dummyImg from '../assets/dummyImg.jpg';
 import memesData from '../memesData';
 
-function Meme() {
+const memesArray = memesData.data.memes;
+let url;
+
+function getMemeImg() {
+  const randomNumber = Math.floor(Math.random() * memesArray.length);
+  url = memesArray[randomNumber].url;
+  console.log(url)
+  return url
+};  
+
+function Meme(props) {
   return (
-    <img src={dummyImg} alt="" className="w-9/12"/>
+    <img src={props.url} alt="" className="w-9/12"/>
   );
 }
 
-export default Meme;
+export { Meme, getMemeImg };
