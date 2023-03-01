@@ -8,13 +8,23 @@ function Display() {
   const [meme, setMeme] = React.useState({
     topText: '',
     bottomText: '',
-    randomImage: 'https://i.imgflip.com/30b1gx.jpg',
+    randomImage: '',
   });
 
   const [allMemeImages, setAllMemeImages] = React.useState(memesData);
 
+  const [allMemes, setAllMemes] = React.useState({});
+  console.log(allMemes)
+
+  React.useEffect(function() {
+    console.log('effect ran');
+    fetch(`https://api.imgflip.com/get_memes`)
+      .then(res => res.json())
+      .then(data => setAllMemes(data))
+  }, [])
+
   function getMeme() {
-    const memesArray = allMemeImages.data.memes;
+    const memesArray = allMemes.data.memes;
     const randomNumber = Math.floor(Math.random() * memesArray.length);
     const url = memesArray[randomNumber].url
     setMeme(prevMeme => ({
