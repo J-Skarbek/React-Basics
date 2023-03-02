@@ -15,10 +15,14 @@ function Display() {
 
   React.useEffect(function() {
     console.log('effect ran');
-
     fetch(`https://api.imgflip.com/get_memes`)
       .then(res => res.json())
-      .then(data => setAllMemes(data))
+      .then(data => setAllMemes(data));
+  }, [])
+
+  React.useEffect(function() {
+    console.log('initial meme');
+    // getMeme();
   }, [])
 
   function getMeme() {
