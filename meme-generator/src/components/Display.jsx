@@ -11,13 +11,11 @@ function Display() {
     randomImage: '',
   });
 
-  const [allMemeImages, setAllMemeImages] = React.useState(memesData);
-
   const [allMemes, setAllMemes] = React.useState({});
-  console.log(allMemes)
 
   React.useEffect(function() {
     console.log('effect ran');
+
     fetch(`https://api.imgflip.com/get_memes`)
       .then(res => res.json())
       .then(data => setAllMemes(data))
@@ -63,6 +61,7 @@ function Display() {
           </input>
           <button
             type="button"
+            name="randomImage"
             onClick={getMeme}
             className="text-white font-bold bg-gradient-to-r from-darkPurple to-lightPurple grow-2 my-4 rounded-3xl">
             Get New Meme Image
@@ -79,6 +78,7 @@ function Display() {
           className="meme-text font-karla font-black text-white text-6xl uppercase dummy-bottom-line absolute bottom-8">
           {meme.bottomText}
         </span>
+        <pre>{JSON.stringify(allMemes, null, 2)}</pre>
       </div>
     </main>
   );

@@ -6,9 +6,12 @@ import Display from './components/Display';
 import Footer from './components/Footer';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+  // <React.StrictMode>
+  <div>
     <Navbar />
     <Display />
     <Footer />
-  </React.StrictMode>,
+  </div>
+
+  // </React.StrictMode>,
 )
