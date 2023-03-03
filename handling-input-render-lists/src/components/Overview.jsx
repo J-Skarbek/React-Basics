@@ -4,10 +4,10 @@ class Overview extends Component {
   constructor() {
     super()
 
-    this.state = {
-      task: { text: ''},
-      tasks: [],
-    }
+    // this.state = {
+    //   task: { text: ''},
+    //   tasks: [],
+    // }
   }
 
   //write the js functions here******
