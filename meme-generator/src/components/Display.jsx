@@ -1,5 +1,4 @@
 import '../styles/Display.css';
-import memesData from '../memesData';
 import React from 'react';
 
 function Display() {
@@ -8,7 +7,7 @@ function Display() {
   const [meme, setMeme] = React.useState({
     topText: '',
     bottomText: '',
-    randomImage: '',
+    randomImage: 'https://i.imgflip.com/3lmzyx.jpg',
   });
 
   const [allMemes, setAllMemes] = React.useState({});
@@ -20,15 +19,27 @@ function Display() {
       .then(data => setAllMemes(data));
   }, [])
 
-  React.useEffect(function() {
-    console.log('initial meme');
-    // getMeme();
-  }, [])
+  // React.useEffect(() => {
+  //   console.log('effect ran');
+  //   async function getMemes() {
+  //     const res = await fetch(`https://api.imgflip.com/get_memes`);
+  //     const data = await res.json();
+  //     setAllMemes(data.data.memes);
+  //     const randomNumber = Math.floor(Math.random() * allMemes.length);
+  //     const url = allMemes[randomNumber].url;
+  //     console.log(url)
+  //     setMeme(prevMeme => ({
+  //       ...prevMeme,
+  //       randomImage: url
+  //     }));
+  //   };
+  //   getMemes();
+  // }, [])
 
   function getMeme() {
     const memesArray = allMemes.data.memes;
     const randomNumber = Math.floor(Math.random() * memesArray.length);
-    const url = memesArray[randomNumber].url
+    const url = memesArray[randomNumber].url;
     setMeme(prevMeme => ({
       ...prevMeme,
       randomImage: url
@@ -42,7 +53,7 @@ function Display() {
       [name]: value
     }))
   }
-  
+ 
   return (
     <main className="min-h-full">
       <div className="user-input flex items-center justify-center px-8 my-8">
@@ -82,7 +93,6 @@ function Display() {
           className="meme-text font-karla font-black text-white text-6xl uppercase dummy-bottom-line absolute bottom-8">
           {meme.bottomText}
         </span>
-        <pre>{JSON.stringify(allMemes, null, 2)}</pre>
       </div>
     </main>
   );
